@@ -1,9 +1,13 @@
 import java.util.Scanner;
+import lib.Example;
 
 public class AddressLine { 
 	public static void main(String[] args) {
 		String name;
 		int age; 
+		int addage = 10;
+		int total;
+		
 		String top = "========================================";
 		Scanner kb = new Scanner(System.in);
 	
@@ -15,5 +19,8 @@ public class AddressLine {
 		
 		System.out.println(top);
 		System.out.println("Wow " + name + ", you are really old!");
+		
+		total = Example.add(age, addage);
+		System.out.println("In 10 years you will be " + total);
 	}
 }
